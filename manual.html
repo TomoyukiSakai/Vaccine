@@ -1,0 +1,334 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.2">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="ja"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;【ChatGPT Whisperを使った証拠保全マニュアル】&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body { font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo', sans-serif; line-height: 1.7; margin: 40px; background-color: #f9f9f9; color: #333; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>h1 { color: #8B0000; border-bottom: 3px solid #8B0000; padding-bottom: 10px; margin-top: 0; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>h2 { color: #0056b3; border-left: 5px solid #0056b3; padding-left: 10px; margin-top: 30px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>h3 { color: #333; border-bottom: 1px dashed #ccc; padding-bottom: 5px; margin-top: 25px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.important { color: #D63301; font-weight: bold; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.code-block { background-color: #eee; padding: 15px; border-radius: 5px; overflow-x: auto; margin-bottom: 20px; font-family: monospace; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.note { background-color: #fff3cd; border-left: 5px solid #ffc107; padding: 10px; margin: 20px 0; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>table { width: 100%; border-collapse: collapse; margin: 20px 0; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>th { background-color: #f2f2f2; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;💻 【ChatGPT Whisperを使った証拠保全マニュアル】（初心者・安全重視版）&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;iPhoneで録音した証拠ファイルを、裁判や警察提出のために「聞きやすく加工」「文字起こし」「改ざん防止の証明」まで自動で行うための手順です。&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="note"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;🚨 重要：証拠保全の心構え&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;strong&gt;元ファイルは絶対に触らない：&lt;/strong&gt; 元の録音ファイルは、このマニュアルの過程で一切編集しません。最初に安全な場所にコピーを保存します。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;strong&gt;ハッシュ値の重要性：&lt;/strong&gt; 「ハッシュ」はファイルの指紋です。万が一、編集後にファイルが改ざんされても、オリジナルのハッシュ値と比較することで、その改ざんを証明できます。この手順では、全ての加工ファイルを含めてハッシュ値を記録します。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;hr&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;STEP 0：ファイルの配置準備&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;ol&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;strong&gt;デスクトップに作業フォルダを作成&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;デスクトップに &lt;code&gt;evidence_input&lt;/code&gt; というフォルダを作成してください。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;strong&gt;iPhone録音をコピーし、ファイル名を変更&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;iPhoneで録音したM4Aファイルを &lt;code&gt;evidence_input&lt;/code&gt; フォルダにコピーします。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;ファイル名を必ず &lt;span class="important"&gt;&lt;code&gt;yourfile.m4a&lt;/code&gt;&lt;/span&gt; に変更してください。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;em&gt;例：&lt;/em&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;&lt;strong&gt;Mac:&lt;/strong&gt; &lt;code&gt;~/Desktop/evidence_input/yourfile.m4a&lt;/code&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;&lt;strong&gt;Windows:&lt;/strong&gt; &lt;code&gt;C:\Users\&amp;lt;ユーザー名&amp;gt;\Desktop\evidence_input\yourfile.m4a&lt;/code&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/ol&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;hr&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;STEP 1：必要ソフトウェアのインストール&lt;/h2&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;🚀 共通：Pythonのインストール（プログラミング言語）&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;table&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;thead&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;th&gt;OS&lt;/th&gt;&lt;th&gt;手順&lt;/th&gt;&lt;th&gt;備考&lt;/th&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/thead&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;tbody&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Mac&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;ターミナルでHomebrew（後述）からインストール&lt;/td&gt;&lt;td&gt;Homebrewを使うと管理が楽になります。&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Windows&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="https://www.python.org/downloads/" target="_blank"&gt;公式サイト&lt;/a&gt;からインストーラーをダウンロード・実行&lt;/td&gt;&lt;td&gt;💡インストール時、&lt;span class="important"&gt;&lt;strong&gt;「Add python.exe to PATH」&lt;/strong&gt;に必ずチェックを入れてください。&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/tbody&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/table&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;🎵 共通：FFmpegのインストール（音声・動画処理ソフト）&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;table&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;thead&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;th&gt;OS&lt;/th&gt;&lt;th&gt;手順&lt;/th&gt;&lt;th&gt;備考&lt;/th&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/thead&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;tbody&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Mac&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;Homebrew（後述）からインストール&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Windows&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;💡&lt;a href="https://ffmpeg.org/download.html" target="_blank"&gt;FFmpeg公式サイト&lt;/a&gt;からダウンロードし、システム環境変数の&lt;strong&gt;PATH&lt;/strong&gt;に追加する必要があります。難しい場合は、&lt;strong&gt;STEP 6実行時のみ&lt;/strong&gt; &lt;code&gt;ffmpeg.exe&lt;/code&gt; をデスクトップに置いておけば動作する場合もあります。&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/tbody&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/table&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;🍎 Macユーザー向け：Homebrewのインストール（パッケージ管理）&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;ol&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;strong&gt;「ターミナル.app」&lt;/strong&gt; を開く。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;以下のコマンドを実行し、インストールします。</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="code-block"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;code&gt;/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"&lt;/code&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;続けて、PythonとFFmpegをインストールします。</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="code-block"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;code&gt;brew install python&lt;br&gt;brew install ffmpeg&lt;/code&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/ol&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;hr&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;STEP 2＆3：環境設定とライブラリのインストール&lt;/h2&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;1. 仮想環境の作成と起動&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;以降の操作は、Mac・Windowsともに &lt;strong&gt;ターミナル（またはコマンドプロンプト/PowerShell）&lt;/strong&gt; で行います。&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;table&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;thead&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;th&gt;OS&lt;/th&gt;&lt;th&gt;コマンド（作成と起動）&lt;/th&gt;&lt;th&gt;備考&lt;/th&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/thead&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;tbody&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Mac&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;python3 -m venv ~/audenv&lt;/code&gt;&lt;br&gt;&lt;code&gt;source ~/audenv/bin/activate&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;(audenv)&lt;/code&gt; と表示されれば成功です。&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Windows&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;python -m venv %USERPROFILE%\audenv&lt;/code&gt;&lt;br&gt;&lt;code&gt;%USERPROFILE%\audenv\Scripts\activate&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;(audenv)&lt;/code&gt; と表示されれば成功です。&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/tbody&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/table&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;2. 必要ライブラリのインストール&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="code-block"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;code&gt;pip install librosa soundfile numpy openai-whisper&lt;/code&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;hr&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;STEP 4：証拠保全スクリプトの作成（&lt;span class="important"&gt;全選択・コピペ推奨&lt;/span&gt;）&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;以下のコードを全てコピーし、&lt;span class="important"&gt;&lt;strong&gt;「&lt;code&gt;evidence_auto_script.py&lt;/code&gt;」&lt;/strong&gt;&lt;/span&gt;というファイル名で&lt;span class="important"&gt;&lt;strong&gt;デスクトップ&lt;/strong&gt;&lt;/span&gt;に作成します。&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="code-block"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;code&gt;</p>
+<p class="p1">#!/usr/bin/env python3&lt;br&gt;</p>
+<p class="p1">import subprocess, os, hashlib, datetime, tempfile, shutil&lt;br&gt;</p>
+<p class="p1">import librosa, numpy as np, soundfile as sf&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1"># 入力ファイル&lt;br&gt;</p>
+<p class="p1">INPUT_FOLDER = os.path.expanduser("~/Desktop/evidence_input")&lt;br&gt;</p>
+<p class="p1">INPUT = os.path.join(INPUT_FOLDER, "yourfile.m4a")&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1"># 出力フォルダ&lt;br&gt;</p>
+<p class="p1">OUT = os.path.expanduser("~/Desktop/evidence_output")&lt;br&gt;</p>
+<p class="p1">os.makedirs(OUT, exist_ok=True)&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1"># 出力ファイル名&lt;br&gt;</p>
+<p class="p1">ORIGINAL = os.path.join(OUT, "01_original.m4a")&lt;br&gt;</p>
+<p class="p1">VOICE = os.path.join(OUT, "02_voice_only.m4a")&lt;br&gt;</p>
+<p class="p1">TRANSCRIPT = os.path.join(OUT, "03_transcript.txt")&lt;br&gt;</p>
+<p class="p1">LOGFILE = os.path.join(OUT, "04_process_log.txt")&lt;br&gt;</p>
+<p class="p1">HASHFILE = os.path.join(OUT, "05_hashes.txt")&lt;br&gt;</p>
+<p class="p1">ZIPFILE = os.path.expanduser("~/Desktop/06_evidence.zip")&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1"># ログ関数&lt;br&gt;</p>
+<p class="p1">def log(msg):&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;with open(LOGFILE, "a", encoding="utf-8") as f:&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;f.write(msg + "\n")&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;print(msg)&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1">log("=== 証拠保全開始 ===")&lt;br&gt;</p>
+<p class="p1">log("対象ファイル: " + INPUT)&lt;br&gt;</p>
+<p class="p1">log("開始時刻: " + str(datetime.datetime.now()))&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1"># 元ファイルコピー（オリジナル証拠ファイルの保全）&lt;br&gt;</p>
+<p class="p1">if not os.path.isfile(INPUT):&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;log("🚨エラー: 入力ファイルが見つかりません: " + INPUT)&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;log("STEP 0 を確認してください。")&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;exit(1)&lt;br&gt;</p>
+<p class="p1">shutil.copy(INPUT, ORIGINAL)&lt;br&gt;</p>
+<p class="p1">log("01_original.m4a コピー完了")&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1"># 一時WAVファイル&lt;br&gt;</p>
+<p class="p1">tmp_wav = tempfile.NamedTemporaryFile(suffix=".wav", delete=False).name&lt;br&gt;</p>
+<p class="p1">tmp_wav2 = tempfile.NamedTemporaryFile(suffix=".wav", delete=False).name&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1"># m4a → WAV への変換&lt;br&gt;</p>
+<p class="p1">try:&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;subprocess.run(["ffmpeg", "-y", "-i", INPUT, "-ac", "1", "-ar", "44100", tmp_wav], check=True, capture_output=True)&lt;br&gt;</p>
+<p class="p1">except FileNotFoundError:&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;log("🚨エラー: FFmpeg が見つかりません。STEP 1 を確認してください。")&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;exit(1)&lt;br&gt;</p>
+<p class="p1">except subprocess.CalledProcessError as e:&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;log(f"🚨エラー: FFmpeg 実行に失敗しました。詳細: {e.stderr.decode()}")&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;exit(1)&lt;br&gt;</p>
+<p class="p1">log("一時WAVファイル作成完了")&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1"># 音声抽出（Librosaによるフィルタリング：人の声の周波数帯 60-5000Hz 以外をカット）&lt;br&gt;</p>
+<p class="p1">try:&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;y, sr = librosa.load(tmp_wav, sr=None, mono=True)&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;n_fft = 2048&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;hop = n_fft // 4&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;D = librosa.stft(y, n_fft=n_fft, hop_length=hop)&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;freqs = np.linspace(0, sr/2, 1+n_fft//2)&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;low, high = 60, 5000 # 人の主要な声の周波数帯&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;fade = 300&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;low_mask = np.clip((freqs-(low-fade))/fade,0,1)&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;high_mask = np.clip(((high+fade)-freqs)/fade,0,1)&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;mask = (low_mask*high_mask)[:,None]&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;D2 = D*mask&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;y2 = librosa.istft(D2, hop_length=hop, length=len(y))&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;# 音量調整&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;y2 = y2*1.8&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;m = max(abs(y2))&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;if m&gt;0: y2=y2/m*0.98&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;sf.write(tmp_wav2, y2, sr)&lt;br&gt;</p>
+<p class="p1">except Exception as e:&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;log(f"🚨エラー: 音声抽出・加工中にエラーが発生しました: {e}")&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;exit(1)&lt;br&gt;</p>
+<p class="p1">log("音声抽出・加工完了")&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1"># 加工済みWAV → m4a への変換（提出用）&lt;br&gt;</p>
+<p class="p1">subprocess.run(["ffmpeg","-y","-i",tmp_wav2,"-c:a","aac",VOICE], check=True, capture_output=True)&lt;br&gt;</p>
+<p class="p1">log("02_voice_only.m4a 作成完了")&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1"># 一時WAVファイルの削除&lt;br&gt;</p>
+<p class="p1">os.remove(tmp_wav)&lt;br&gt;</p>
+<p class="p1">os.remove(tmp_wav2)&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1"># Whisperで文字起こし&lt;br&gt;</p>
+<p class="p1">log("Whisperによる文字起こしを開始します... (数分〜数時間かかる場合があります)")&lt;br&gt;</p>
+<p class="p1">try:&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;subprocess.run([&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;"whisper", VOICE,&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;"--model", "large", # 最も精度の高いモデルを使用&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;"--language", "Japanese",&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;"--output_dir", OUT,&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;"--output_format", "txt"&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;], check=True, capture_output=True)&lt;br&gt;</p>
+<p class="p1">except FileNotFoundError:&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;log("🚨エラー: Whisper が見つかりません。STEP 3 を確認してください。")&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;exit(1)&lt;br&gt;</p>
+<p class="p1">except subprocess.CalledProcessError as e:&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;log(f"🚨エラー: Whisper 実行に失敗しました。詳細: {e.stderr.decode()}")&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;exit(1)&lt;br&gt;</p>
+<p class="p1"># Whisperの出力ファイル名は "02_voice_only.txt" になるため、マニュアル指定の "03_transcript.txt" にリネーム&lt;br&gt;</p>
+<p class="p1">try:&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;os.rename(os.path.join(OUT, "02_voice_only.txt"), TRANSCRIPT)&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;log("03_transcript.txt (文字起こし) 作成完了")&lt;br&gt;</p>
+<p class="p1">except FileNotFoundError:&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;log("🚨エラー: Whisperの出力ファイルが見つかりません。")&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;exit(1)&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1"># SHA256ハッシュの計算と記録&lt;br&gt;</p>
+<p class="p1">log("SHA256ハッシュ値の計算を開始...")&lt;br&gt;</p>
+<p class="p1">def sha256(path):&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;# ファイルサイズが大きい場合も考慮し、ブロックごとに読み込む&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;h = hashlib.sha256()&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;with open(path, "rb") as f:&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;while True:&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;block = f.read(65536) # 64KB block&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;if not block: break&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;h.update(block)&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;return h.hexdigest()&lt;br&gt;</p>
+<p class="p1">with open(HASHFILE,"w") as f:&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;# 重要なのは「オリジナル」「加工済」「文字起こし」のハッシュ値&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;for fname in [ORIGINAL, VOICE, TRANSCRIPT]:&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;if os.path.isfile(fname):&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;f.write(f"{sha256(fname)}&amp;nbsp;&amp;nbsp; {os.path.basename(fname)}\n")&lt;br&gt;</p>
+<p class="p1">log("05_hashes.txt (ハッシュ値) 作成完了")&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1"># ZIP化&lt;br&gt;</p>
+<p class="p1">log("提出用ZIPファイルを作成中...")&lt;br&gt;</p>
+<p class="p1">try:&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;# `zip`コマンドはMac/Linuxの標準ですが、Windowsには標準ではないため注意が必要です。&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;# Windowsでzipコマンドが使えない場合は、手動でフォルダを右クリックして圧縮してください。&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;subprocess.run(["zip","-r",ZIPFILE,OUT], check=True, capture_output=True)&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;log("06_evidence.zip 作成完了")&lt;br&gt;</p>
+<p class="p1">except FileNotFoundError:&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;log("💡注意: zip コマンドが見つかりませんでした。Windowsの方は 'evidence_output' フォルダを右クリックし、「送る」-&gt;「圧縮（zip形式）フォルダー」で作成してください。")&lt;br&gt;</p>
+<p class="p1">except subprocess.CalledProcessError as e:&lt;br&gt;</p>
+<p class="p1">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;log(f"🚨エラー: ZIP作成に失敗しました。詳細: {e.stderr.decode()}")&lt;br&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1">log("=== 証拠保全完了 ===")&lt;br&gt;</p>
+<p class="p1">log("完了時刻: " + str(datetime.datetime.now()))</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/code&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;hr&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;STEP 5：実行権限（Macのみ）&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Macの場合、以下のコマンドを実行してスクリプトに実行する権限を与えます。&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="code-block"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;code&gt;chmod +x ~/Desktop/evidence_auto_script.py&lt;/code&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;hr&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;STEP 6：証拠保全の実行&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;ターミナル（またはコマンドプロンプト/PowerShell）で以下のコマンドを実行します。&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="code-block"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;code&gt;python ~/Desktop/evidence_auto_script.py&lt;/code&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="note"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;&lt;strong&gt;実行後：&lt;/strong&gt; ログが画面に流れ、処理が開始されます。Whisperの文字起こし（&lt;code&gt;--model large&lt;/code&gt;）は&lt;strong&gt;非常に時間がかかる&lt;/strong&gt;ため（数十分〜数時間）、気長にお待ちください。&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;hr&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;STEP 7：作成されるファイル&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;処理が完了すると、デスクトップに以下のファイルが作成されます。&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;table&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;thead&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;th&gt;パス&lt;/th&gt;&lt;th&gt;ファイル名&lt;/th&gt;&lt;th&gt;内容&lt;/th&gt;&lt;th&gt;提出時の重要度&lt;/th&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/thead&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;tbody&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;td&gt;&lt;code&gt;~/Desktop/evidence_output/&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;01_original.m4a&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;iPhone録音の&lt;strong&gt;完全なコピー&lt;/strong&gt;（元ファイル）&lt;/td&gt;&lt;td&gt;&lt;strong&gt;最重要&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;td&gt;&lt;code&gt;~/Desktop/evidence_output/&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;02_voice_only.m4a&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;聞きやすく加工&lt;/strong&gt;された音声ファイル&lt;/td&gt;&lt;td&gt;&lt;strong&gt;重要&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;td&gt;&lt;code&gt;~/Desktop/evidence_output/&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;03_transcript.txt&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;Whisperによる&lt;strong&gt;文字起こし&lt;/strong&gt;結果&lt;/td&gt;&lt;td&gt;&lt;strong&gt;重要&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;td&gt;&lt;code&gt;~/Desktop/evidence_output/&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;04_process_log.txt&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;実行日時や処理内容&lt;/strong&gt;のログ&lt;/td&gt;&lt;td&gt;&lt;strong&gt;重要&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;td&gt;&lt;code&gt;~/Desktop/evidence_output/&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;05_hashes.txt&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;全ファイルの改ざん防止用SHA256ハッシュ値&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;最重要&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;td&gt;&lt;code&gt;~/Desktop/&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;06_evidence.zip&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;上記フォルダをまとめた&lt;strong&gt;提出用圧縮ファイル&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;提出用&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/tbody&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/table&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;hr&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;STEP 8：提出時の注意&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;提出先（裁判所や警察）には、原則として**06\_evidence.zip**を提出します。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;ZIPファイルは開封せずにそのまま提出し、「**改ざん防止の証明として05\_hashes.txtを添付しています**」と明記してください。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;物理メディア（USBメモリなど）で提出する場合は、フォルダごとコピーしても問題ありませんが、ZIPファイルにしておくと、コピー漏れや改ざんのリスクを減らせます。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/ul&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
